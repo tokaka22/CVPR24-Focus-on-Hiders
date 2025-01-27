@@ -3,6 +3,10 @@
 
 The official implementation of our CVPR 2024 paper "**Focus on Hiders: Exploring Hidden Threats for Enhancing Adversarial Training**" [[Arxiv](https://arxiv.org/html/2312.07067v1)] [[CVPR](https://openaccess.thecvf.com/content/CVPR2024/html/Li_Focus_on_Hiders_Exploring_Hidden_Threats_for_Enhancing_Adversarial_Training_CVPR_2024_paper.html)]
 
+## Abstract
+
+Adversarial training is often formulated as a min-maxproblem, however, concentrating only on the worst adver-sarial examples causes alternating repetitive confusion ofthe model, i.e., previously defended or correctly classifiedsamples are not defensible or accurately classifiable in sub-sequent adversarial training. We characterize such non-ignorable samples as “hiders”, which reveal the hiddenhigh-risk regions within the secure area obtained throughadversarial training and prevent the model from finding thereal worst cases. We demand the model to prevent hiderswhen defending against adversarial examples for improv-ing accuracy and robustness simultaneously. By rethink-ing and redefining the min-max optimization problem foradversarial training, we propose a generalized adversar-ial training algorithm called Hider-Focused AdversarialTraining (HFAT). HFAT introduces the iterative evolutionoptimization strategy to simplify the optimization problemand employs an auxiliary model to reveal hiders, effectivelycombining the optimization directions of standard adversar-ial training and prevention hiders. Furthermore, we intro-duce an adaptive weighting mechanism that facilitates themodel in adaptively adjusting its focus between adversarialexamples and hiders during different training periods. Wedemonstrate the effectiveness of our method based on exten-sive experiments, and ensure that HFAT can provide higherrobustness and accuracy.
+
 ## Usage
 
 The experiments are conducted using with a single GeForce RTX 4090 24GB.
